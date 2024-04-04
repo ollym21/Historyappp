@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/history"
+    android:background="@drawable/untitled_design"
     tools:context=".MainActivity">
 
     <Button
@@ -36,10 +36,10 @@
         android:layout_width="334dp"
         android:layout_height="73dp"
         android:ems="10"
+        android:hint="Enter Age Here"
         android:inputType="text"
         android:text=""
         android:textColorHint="@color/white"
-        android:hint="Enter Age Here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,17 +48,17 @@
 
     <TextView
         android:id="@+id/resultTextview"
-        android:layout_width="317dp"
-        android:layout_height="59dp"
+        android:layout_width="306dp"
+        android:layout_height="165dp"
         android:text="Your historical figure is..."
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.301" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
