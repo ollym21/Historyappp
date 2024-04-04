@@ -15,10 +15,10 @@ import androidx.activity.enableEdgeToEdge
 class MainActivity : AppCompatActivity() {
 
     //declaring variables
-    lateinit var searchbutton: Button
-    lateinit var clearbutton: Button
-    lateinit var ageInput: EditText
-    lateinit var resultTextView: TextView
+    private lateinit var searchbutton: Button
+    private lateinit var clearbutton: Button
+    private lateinit var ageInput: EditText
+    private lateinit var resultTextView: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             //create variable of age to get value from user
             val age = ageInput.text.toString().toIntOrNull()
 
+
+
             //since ages should range between 20 and 50
             if (age != null && age in 20..100) {
                 //when age 54 display Luther vandross when 25 display Amy when...ect.
@@ -47,13 +49,11 @@ class MainActivity : AppCompatActivity() {
                     54 -> "Luther Vandross"
                     76 -> "Carl Weathers"
                     25 -> "Tupac Shaku"
-                    36 -> "Princess Dianna." +
-                            ""
+                    36 -> "Princess Dianna"
                     34 -> "Ricky Ricky"
                     47 -> "Shona Ferguson"
                     50 -> "Miachael Jackson"
-                    27 -> "Amy Whinehouse." +
-                            ""
+                    27 -> "Amy Whinehouse."
                     92 -> "Raymond Ackermans"
                     else -> null
                 }
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
             } else {
 
-                resultTextView.text = "invalid input, please enter a age between 20 and 50."
+                resultTextView.text = "invalid input, please enter a age between 20 and 100."
             }
 
             clearbutton.setOnClickListener {
